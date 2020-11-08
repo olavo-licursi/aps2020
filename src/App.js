@@ -118,8 +118,8 @@ export default function App(){
                         <Text style={styles.textStyle} >Marca: {eletronico.marca}</Text>
                         <Text style={styles.textStyle} >Potencia: {eletronico.potencia}</Text>
                         <Text style={styles.textStyle} >Tempo Uso: {eletronico.tempoUso}</Text>
-                        <Text style={styles.textStyle} >Gasto Dia Watts: {eletronico.gastoDiaWatts}</Text>
-                        <Text style={styles.textStyle} >Gasto Mes Watts: {eletronico.gastoMesWatts}</Text>
+                        <Text style={styles.textStyle} >Gasto Dia Watts: {eletronico.gastoDiaWatts} KW</Text>
+                        <Text style={styles.textStyle} >Gasto Mes Watts: {eletronico.gastoMesWatts} KW</Text>
                         <Text style={styles.textStyle} >Gasto Dia Reais: R${eletronico.gastoDiaReais}</Text>
                         <Text style={styles.textStyle} >Gasto Mes Reais: R${eletronico.gastoMesReais}</Text>
                         
