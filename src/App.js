@@ -86,13 +86,13 @@ export default function App(){
 
                           <TextInput 
                             style={styles.input}
-                            placeholder='Potencia'
+                            placeholder='Potencia em Watts'
                             onChangeText={(val) => setPotencia(val)}
                           />
 
                           <TextInput 
                             style={styles.input}
-                            placeholder='Tempo de Uso'
+                            placeholder='Tempo de uso em Horas'
                             onChangeText={(val) => setTempoUso(val)}
                           />
 
@@ -101,7 +101,7 @@ export default function App(){
                           style={styles.button} 
                           onPress={handleAddEletronico}
                           >
-                              <Text style={styles.buttonText}>Adicionar Eletrônico</Text>
+                              <Text style={styles.buttonText}>Adicionar Eletrônicos</Text>
                           </TouchableOpacity>
 
                       
@@ -116,8 +116,8 @@ export default function App(){
                         <View style={styles.eletroContainer}>
                         <Text style={styles.textStyle} >Nome: {eletronico.name}</Text>
                         <Text style={styles.textStyle} >Marca: {eletronico.marca}</Text>
-                        <Text style={styles.textStyle} >Potencia: {eletronico.potencia}</Text>
-                        <Text style={styles.textStyle} >Tempo Uso: {eletronico.tempoUso}</Text>
+                        <Text style={styles.textStyle} >Potencia: {eletronico.potencia} W</Text>
+                        <Text style={styles.textStyle} >Tempo Uso: {eletronico.tempoUso} Hrs</Text>
                         <Text style={styles.textStyle} >Gasto Dia Watts: {eletronico.gastoDiaWatts} KW</Text>
                         <Text style={styles.textStyle} >Gasto Mes Watts: {eletronico.gastoMesWatts} KW</Text>
                         <Text style={styles.textStyle} >Gasto Dia Reais: R${eletronico.gastoDiaReais}</Text>
