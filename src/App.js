@@ -101,7 +101,7 @@ export default function App(){
                           style={styles.button} 
                           onPress={handleAddEletronico}
                           >
-                              <Text style={styles.buttonText}>Adicionar Eletrônicos</Text>
+                              <Text style={styles.buttonText}>Adicionar Eletrônico</Text>
                           </TouchableOpacity>
 
                       
