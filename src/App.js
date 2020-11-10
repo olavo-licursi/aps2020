@@ -65,13 +65,13 @@ export default function App(){
 
       return(
         <>
-            <StatusBar barStyle="light-content" backgroundColor="#87CEEB" />
+            <StatusBar barStyle="light-content" backgroundColor="#87CEEB"  />
 
               <SafeAreaView style={styles.container}>
                 
                 <ScrollView >
                     <View >
-                          
+                          <Text style={styles.textTitle}>Calculadora de Gastos</Text>
                           <TextInput 
                             style={styles.input}
                             placeholder='Nome'
@@ -119,9 +119,9 @@ export default function App(){
                         <Text style={styles.textStyle} >Potencia: {eletronico.potencia} W</Text>
                         <Text style={styles.textStyle} >Tempo Uso: {eletronico.tempoUso} Hrs</Text>
                         <Text style={styles.textStyle} >Gasto Dia Watts: {eletronico.gastoDiaWatts} KW</Text>
-                        <Text style={styles.textStyle} >Gasto Mes Watts: {eletronico.gastoMesWatts} KW</Text>
+                        <Text style={styles.textStyle} >Gasto Mês Watts: {eletronico.gastoMesWatts} KW</Text>
                         <Text style={styles.textStyle} >Gasto Dia Reais: R${eletronico.gastoDiaReais}</Text>
-                        <Text style={styles.textStyle} >Gasto Mes Reais: R${eletronico.gastoMesReais}</Text>
+                        <Text style={styles.textStyle} >Gasto Mês Reais: R${eletronico.gastoMesReais}</Text>
                         
 
 
@@ -150,6 +150,11 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: "#E8E8E8",
+    },
+    textTitle:{
+        marginLeft:40,
+        fontSize: 30,
+        fontWeight: 'bold',
     },
     textStyle: {       
         marginLeft:20,
